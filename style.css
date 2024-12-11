@@ -1,0 +1,284 @@
+/* google font */
+@import url("https://fonts.googleapis.com/css2?family=Road+Rage&display=swap");
+
+/* css reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+:root {
+  --text-color: #020101;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  font-family: "Road Rage", sans-serif;
+  overflow-x: hidden;
+}
+
+.seferation {
+  background-color: white;
+  width: 1px;
+  height: 1px;
+}
+/* * Header */
+
+.main {
+  width: auto;
+  height: 100vh;
+  background: url(./images/home.png);
+  background-size: cover;
+  background-position: center;
+}
+header {
+  /* From https://css.glass */
+  background: rgba(54, 51, 51, 0.19);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5.3px);
+  -webkit-backdrop-filter: blur(5.3px);
+  border: 1px solid rgba(54, 51, 51, 0.32);
+  border-radius: 50px;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+}
+
+.logo {
+  margin: 10px;
+}
+
+.logo img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.navbar {
+  width: 100%;
+  height: 100%;
+}
+
+.nav-item {
+  display: flex;
+  justify-content: end;
+  column-gap: 70px;
+  padding-right: 20px;
+}
+
+.nav-sec-item a {
+  font-size: 30px;
+  color: var(--text-color);
+  transition: all 0.4s;
+}
+
+.nav-sec-item a:hover {
+  color: white;
+}
+
+main {
+  background-color: yellow;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+}
+
+.main-background img {
+  width: 100%;
+  height: 100vh;
+}
+
+.text-area {
+  display: flex;
+  width: 50%;
+  height: auto;
+  margin-left: 30px;
+  align-items: center;
+  justify-content: start;
+}
+
+.text-area p {
+  font-size: 25px;
+}
+
+/* * Model Area */
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
+  flex-wrap: wrap;
+  margin-top: 5px;
+  background-color: rgb(50, 18, 1);
+}
+
+.model-box {
+  width: 30%;
+  height: 50vh;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.box-img {
+  flex-grow: 1;
+  overflow: hidden;
+  padding-bottom: 100px;
+  background-color: rgba(33, 31, 31, 0.866);
+}
+.img-model {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.model-text {
+  display: flex;
+  align-items: center;
+  padding: 27px;
+  font-size: 35px;
+  font-weight: 300;
+  color: #fff;
+}
+
+/* * History Area */
+
+.history-area {
+  display: flex;
+  align-items: center;
+  column-gap: 50px;
+}
+
+.history-text {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 100px;
+}
+
+.text-history {
+  font-size: 40px;
+}
+
+.history-text-item {
+  display: flex;
+  justify-content: left;
+  width: 100%;
+  font-size: 30px;
+}
+
+p {
+  font-size: 25px;
+}
+
+/* * Comment Area */
+
+.comment-area {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: rgb(50, 18, 1);
+  margin-top: 5px;
+}
+
+.comment-img {
+  width: 80%;
+  height: 300px;
+  border: 2px solid;
+  object-fit: cover;
+}
+
+.comment-text {
+  font-weight: lighter;
+}
+
+.comment-box {
+  width: 50%;
+  margin-left: 150px;
+  margin-top: 10px;
+}
+
+/* * Footer Alanı */
+
+footer {
+  background-color: rgb(50, 18, 1);
+  height: 300px;
+  width: 100%;
+  margin-top: 5px;
+}
+
+.footer-top {
+  display: flex;
+  align-items: start;
+  justify-content: left;
+  column-gap: 230px;
+  width: 100%;
+  height: 80%;
+  padding-top: 15px;
+  font-size: 30px;
+  padding: 20px 140px;
+}
+
+.footer-social {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.footer-item {
+  color: black;
+}
+
+.footer-nav-item {
+  color: black;
+}
+
+.footer-bottom {
+  height: 70px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  text-align: center;
+}
+
+.footer-button-item {
+  color: black;
+  font-weight: lighter;
+  font-size: 20px;
+}
+
+.arrow {
+  color: wheat;
+}
+
+span {
+  color: #fff;
+  font-weight: lighter;
+}
