@@ -4,4 +4,4 @@ Chopper
 
 <h2> Ekran Goruntusu </h2>
 
-![](chopperproje.gif)
+![](choppergif.gif)
